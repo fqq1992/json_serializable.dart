@@ -106,6 +106,8 @@ class JsonKey {
   /// Creates a new [JsonKey] instance.
   ///
   /// Only required when the default behavior is not desired.
+  ///
+  final bool parseWithRootJson;
   const JsonKey({
     this.defaultValue,
     this.disallowNullValue,
@@ -117,5 +119,6 @@ class JsonKey {
     this.required,
     this.toJson,
     this.unknownEnumValue,
+    this.parseWithRootJson
   });
 }
